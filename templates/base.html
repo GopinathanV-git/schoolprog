@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Greenfield School</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f2f2f2; }
+        header { background: #2c3e50; color: white; padding: 15px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greenfield School</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/courses">Courses</a>
+            <a href="/contact">Contact</a>
+            <a href="/admin">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Greenfield School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
